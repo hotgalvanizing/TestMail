@@ -1,1 +1,1 @@
-include ':app', ':annotations', ':compiler', ':corelibrary', ':maillibrary'
+include ':app', ':annotations', ':compiler', ':corelibrary', ':maillibrary', ':uilibrary'

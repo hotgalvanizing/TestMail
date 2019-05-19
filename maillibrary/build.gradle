@@ -24,5 +24,6 @@ android {
 }
 
 dependencies {
-    implementation project(path: ':corelibrary')
+
+    api project(path: ':uilibrary')
 }
