@@ -1,13 +1,22 @@
 package com.mx.testmail;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import com.mx.corelibrary.activities.ProxyActivity;
+import com.mx.corelibrary.gelegates.LatteDelegate;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends ProxyActivity {
+    @Override
+    public LatteDelegate setRootDelegate() {
+        return new SimpleDelegate();
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public void post(Runnable runnable) {
+
     }
+
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
+//    }
 }
