@@ -17,4 +17,6 @@ public class SimpleDelegate extends LatteDelegate {
     public void onBindView(@Nullable Bundle savedInstanceState, @NonNull View rootView) {
 
     }
+
+
 }
